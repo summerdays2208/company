@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Company</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+*{
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #4193C1;
+    border: none;
+}
+.navbar a{
+    color: white !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    background-color:#0CA5FB !important;
+}
+.jumbotron{
+    background-color: #4193C1;
+    color: white;
+    padding: 200px 25px;
+}
+.container-fluid{
+    padding: 60px 50px;
+}
+.bg-grey{
+    background-color: #f6f6f6;
+}
+.logo{
+    font-size: 200px;
+    color: #4193C1;
+}
+.row i{
+    color: #4193C1;
+    font-size: 35px;
+}
+.col-sm-4{
+    padding: 25px 0;
+}
+@media screen and (max-width:768px) {
+    .col-sm-4{
+        text-align: center;
+    }
+}
+.column1{
+    float: right;
+    width: 66.66%;
+}
+.column2{
+    float: right;
+    width: 33.33%;
+}
+#about div:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 768px) {
+    .column1{
+        width: 100%;
+    }
+    .column2{
+        width: 100%;
+    }
+}
+h2{
+    padding-bottom: 15px;
+}
+</style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- 네비게이션 ------------------------------------------------------------------------------->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#myPage">TIS.EDU</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" data-toggle="collapse" data-target=".navbar-collapse.in">회사소개</a></li>
+            <li><a href="#history" data-toggle="collapse" data-target=".navbar-collapse.in">회사연혁</a></li>
+            <li><a href="#course" data-toggle="collapse" data-target=".navbar-collapse.in">과목소개</a></li>
+            <li><a href="#map" data-toggle="collapse" data-target=".navbar-collapse.in">오시는길</a></li>
+            <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- 네비게이션 -->
+    <!-- 타이틀 ------------------------------------------------------------------------------->
+    <div class="jumbotron text-center">
+        <h1>TIS 정보기술교육센터</h1>
+        <p>국비지원 IT전문교육기관</p>
+        <form class="form-inline" action="search.jsp">
+            <div class="input-group">
+                <input type="text" class="form-control" size="50" placeholder="검색어를 입력하세요" required>
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-danger">Search</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- 타이틀 -->
+    <!-- 회사소개 ------------------------------------------------------------------------------->
+    <div id="about" class="container-fluid">
+        <div class="container">
+            <div class="row1">
+                <div class="column2">
+                    <span class="glyphicon glyphicon-signal logo"></span>
+                </div>
+                <div class="column1">
+                    <h1>회사소개</h1>
+                    <p>TIS정보기술교육센터는 국비지원 IT전문교육기관입니다.</p>
+                    <p>실무에서 사용할 수 있는 IT교육을 위해 노력하고 있습니다.</p>
+                </div>
+            </div>  
+        </div>  
+    </div>
+    <!-- 회사소개 -->
+    <!-- 회사연혁 ------------------------------------------------------------------------------->
+    <div id="history" class="container-fluid bg-grey">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <span class="glyphicon glyphicon-globe logo"></span>
+                </div>
+                <div class="col-sm-8">
+                    <h1>회사연혁</h1>
+                    <p>2013년. TIS정보시스템 법인설립</p>
+                    <p>2016년. 고용노동부 구직자과정 승인</p>
+                    <p>2019년. 고용노동부 우수훈련기관 선정</p>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <!-- 회사연혁 -->
+    <!-- 과목소개 ------------------------------------------------------------------------------->
+    <div id="course" class="container-fluid text-center">
+        <h2>과목소개</h2>
+        <h4>주요 교육과목 안내</h4>
+        <div class="row" style="padding-top: 10px;">
+            <div class="col-sm-4">
+                <i class="fas fa-mug-hot"></i>
+                <h4>JAVA</h4>
+                <p>객체지향언어</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fab fa-html5"></i>
+                <h4>HTML</h4>
+                <p>웹표준언어</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fab fa-css3-alt"></i>
+                <h4>CSS</h4>
+                <p>Cascading Style Sheet</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <i class="fas fa-database"></i>
+                <h4>Oracle</h4>
+                <p>관계형데이터베이스</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fas fa-server"></i>
+                <h4>R</h4>
+                <p>데이터분석언어</p>
+            </div>
+            <div class="col-sm-4">
+                <i class="fas fa-layer-group"></i>
+                <h4>Spring</h4>
+                <p>Back End Framework</p>
+            </div>
+        </div>
+    </div>
+    <!-- 과목소개 -->
+    <!-- 카카오맵 ----------------------------------------------->
+    <div id="map" class="container-fluid text-center">
+        <h2>오시는길</h2>
+        <div id="kakaomap" style="width: 100%;height: 500px;"></div>
+        <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=1b64a4ecf605e8f55bd0b3f1be7b9340"></script>
+        <script> 
+            var mapContainer = document.getElementById('kakaomap'), // 지도를 표시할 div 
+            mapOption = { 
+                    center: new daum.maps.LatLng(37.52538287504007, 126.89139198462752), // 지도의 중심좌표
+                    level: 3 // 지도의 확대 레벨
+                };
+
+            var map = new daum.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+
+            // 마커가 표시될 위치입니다 
+            var markerPosition  = new daum.maps.LatLng(37.52538287504007, 126.89139198462752); 
+
+            // 마커를 생성합니다
+            var marker = new daum.maps.Marker({
+                position: markerPosition
+            });
+
+            // 마커가 지도 위에 표시되도록 설정합니다
+            marker.setMap(map);
+        </script>
+    </div>
+    <!-- 카카오맵 -->
+    <!-- Contact ------------------------------------------------------------------------------->
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">Contact</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p><span class="glyphicon glyphicon-map-marker"></span> (우: 70255) 서울특별시 영등포구 선유로 130 
+                    (지번 : 양평동 3가 5-4번지), 에이스하이테크시티3차 2층</p>
+                <p><span class="glyphicon glyphicon-phone"></span> 수강&입학문의 : 02-2069-1931</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> tisemail@tisemail.com</p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" name="name" placeholder="name" class="form-control form-group">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="text" name="email" placeholder="email" class="form-control form-group">
+                    </div>
+                </div>
+                <textarea rows="10" name="comment" placeholder="comment" class="form-control form-group"></textarea>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="submit" value="등록" class="btn btn-default pull-right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact -->
+    <!-- footer ------------------------------------------------------------------------------->
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p>TIS.EDU All rights reserved</p>
+    </footer>
+    <!-- footer -->
+    <!-- smooth scroll ------------------------------------------------------------------------------->
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links in navbar + footer link
+          $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+        
+           // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+        
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 900, function(){
+        
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+              });
+            } // End if
+          });
+        })
+        </script>
+    <!-- smooth scroll -->
+</body>
+</html>
