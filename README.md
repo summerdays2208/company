@@ -74,4 +74,4 @@
 ```
 
 ### 🏷URL
-http://blanc22.dothome.co.kr/company/
+http://leap22.dothome.co.kr/company/
